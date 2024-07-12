@@ -16,15 +16,5 @@
   - **Step 2:** Next, I installed Active Directory on the domain controller and created a domain(orgdomain.com). I ensured that routing was configured correctly so that clients on the private network could access the internet through the domain controller.
   - **Step 3:** To streamline IP address management for the Windows 10 client machines, I set up DHCP on the domain controller. This allowed the client machines to automatically obtain IP addresses from the internal network (192.168.0.X)
   - **Step 4:** After setting up the DHCP, I wrote and executed a PowerShell script to automate the creation of a thousand users in Active Directory.
-  - **Step 4:** 
+  - **Step 5:** With Active Directory set up and users created, I proceeded to install Windows 10 as a client machine. I configured it to use the internal network, where it automatically obtained its IP address from the domain controller. This seamless integration allowed the Windows 10 client to authenticate using one of the users created in AD, demonstrating the successful implementation of our Active Directory environment.
 
-I configured the virtual machine with two network adapters. One adapter connected to the outside internet, while the other was set up for the private network within VirtualBox, using the private IP range 192.168.0.1.
-
-Installing and Configuring Active Directory:
-Next, I installed Active Directory on the domain controller and created our domain. I ensured that routing was configured correctly so that clients on the private network could access the internet through the domain controller.
-
-Setting Up DHCP:
-To streamline IP address management for our Windows 10 client machines, I set up DHCP on the domain controller. This allowed the client machines to automatically obtain IP addresses from the internal network (192.168.0.X).
-
-Automating User Creation with PowerShell:
-Before proceeding to create our client virtual machine, I wrote and executed a PowerShell script on the domain controller. This script automated the creation of a thousand users in Active Directory, saving time and ensuring consistency in user management tasks.
