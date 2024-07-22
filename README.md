@@ -20,5 +20,47 @@
   - **Step 4:** After setting up the DHCP, I wrote and executed a PowerShell script to automate the creation of a thousand users in Active Directory.
   - **Step 5:** With Active Directory set up and users created, I proceeded to install Windows 10 as a client machine. I configured it to use the internal network, where it automatically obtained its IP address from the domain controller. This seamless integration allowed the Windows 10 client to authenticate using one of the users created in AD, demonstrating the successful implementation of our Active Directory environment.
 
+# Installing and Setting up The Windows Server 
+I began by setting up our first Windows Server virtual machine to serve as the domain controller. This machine is essential because it will host Active Directory (AD), which is crucial for centralizing user and computer management within our network. I set up the network configuration to use Network Address Translation (NAT) to allow the virtual machine to access the external internet for updates and other resources.
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/1a.PNG?raw=true" >
+
+<p>The second adapter was configured to use an internal network within VirtualBox, set to the IP range 192.168.0.1. This internal network allows secure communication between the domain controller and client machines in our virtual environment.</p>
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/1b.PNG?raw=true" >
+
+<h3>I named the NAT adapter x_Internet and the internal network adapter i_Internal, configuring the internal network to use the IP range 192.168.0.1 </h3>
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/4.PNG?raw=true" >
+
+----
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/2.PNG?raw=true" >
+
+# Installing and Configuring Active Directory
+
+<p>I configured the local server and installed Active Directory Domain Services (AD DS). Installing AD DS is essential for creating and managing a centralized domain, which allows for efficient administration of users, computers, and other network resources.</p>
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/3.PNG?raw=true" >
+
+----
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/5.PNG?raw=true" >
+
+<p>After installing Active Directory Domain Services (AD DS), the next step was to manually promote the server to a domain controller. This process involves configuring the server to manage and authenticate domain resources. I set the domain name to orgdomain.com, establishing it as the primary domain for the network</p>
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/6.PNG?raw=true" >
+
+----
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/7.PNG?raw=true" >
+
+
+
+
+
+
+
+
 
 
