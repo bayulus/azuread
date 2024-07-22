@@ -59,6 +59,15 @@
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/8.PNG?raw=true" >
 
+<p>After the restart, I accessed Active Directory Users and Computers and created a new user in the Admin folder. Using this new user account, I can now log in with administrative privileges.</p>
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/9.PNG?raw=true" >
+
+----
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/10.PNG?raw=true" >
+
+
 
 
 
