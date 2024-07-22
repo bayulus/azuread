@@ -47,7 +47,7 @@
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/5.PNG?raw=true" >
 
-<p>After installing Active Directory Domain Services (AD DS), the next step was to manually promote the server to a domain controller. This process involves configuring the server to manage and authenticate domain resources. I set the domain name to orgdomain.com, establishing it as the primary domain for the network</p>
+<p>After promoting the server to a domain controller, the system restarted. Upon reboot, I was able to log in using the same credentials used during the server creation, but now with elevated privileges as the domain administrator. During this process, the DNS server was also installed, which is crucial for resolving domain names within the network. This setup ensures that the domain controller can properly manage and authenticate resources in the `orgdomain.com` domain.</p>
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/6.PNG?raw=true" >
 
