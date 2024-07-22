@@ -21,7 +21,7 @@
   - **Step 5:** With Active Directory set up and users created, I proceeded to install Windows 10 as a client machine. I configured it to use the internal network, where it automatically obtained its IP address from the domain controller. This seamless integration allowed the Windows 10 client to authenticate using one of the users created in AD, demonstrating the successful implementation of our Active Directory environment.
 
 # Installing and Setting up The Windows Server 
-I began by setting up our first Windows Server virtual machine to serve as the domain controller. This machine is essential because it will host Active Directory (AD), which is crucial for centralizing user and computer management within our network. I set up the network configuration to use Network Address Translation (NAT) to allow the virtual machine to access the external internet for updates and other resources.
+<p>I began by setting up our first Windows Server virtual machine to serve as the domain controller. This machine is essential because it will host Active Directory (AD), which is crucial for centralizing user and computer management within our network. I set up the network configuration to use Network Address Translation (NAT) to allow the virtual machine to access the external internet for updates and other resources.</p>
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/1a.PNG?raw=true" >
 
@@ -29,7 +29,7 @@ I began by setting up our first Windows Server virtual machine to serve as the d
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/1b.PNG?raw=true" >
 
-<h3>I named the NAT adapter x_Internet and the internal network adapter i_Internal, configuring the internal network to use the IP range 192.168.0.1 </h3>
+<p>I named the NAT adapter x_Internet and the internal network adapter i_Internal, configuring the internal network to use the IP range 192.168.0.1 </p>
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/4.PNG?raw=true" >
 
@@ -54,6 +54,11 @@ I began by setting up our first Windows Server virtual machine to serve as the d
 ----
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/7.PNG?raw=true" >
+
+<p>After promoting the server to a domain controller, the system required a restart to complete the configuration. Once the server was back online, I was able to log in using the same credentials that were used to create the server. However, now these credentials granted me administrative access with domain controller privileges.</p>
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/8.PNG?raw=true" >
+
 
 
 
