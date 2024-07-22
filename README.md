@@ -67,7 +67,15 @@
 
 <img src="https://github.com/bayulus/azuread/blob/main/img/10.PNG?raw=true" >
 
+# Installing RAS/NAT on The Domain Controller
 
+<p>Next, I installed Routing and Remote Access Service (RAS) with Network Address Translation (NAT). The purpose of this setup is to ensure that when I install the client machine, it will have a private virtual network but still be able to access the internet. This configuration allows the client machine to communicate securely within the internal network while maintaining connectivity to external resources.</p>
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/11.PNG?raw=true" >
+
+----
+
+<img src="https://github.com/bayulus/azuread/blob/main/img/12.PNG?raw=true" >
 
 
 
